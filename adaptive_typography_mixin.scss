@@ -1,0 +1,31 @@
+/* $maketWidth = 1280;
+
+@mixin adaptive-font($maxSize, $minSize){
+
+	$addSize: $maxSize - $minSize;
+	$addMobSize: $addSize + $addSize * 0.7;
+
+	@media (max-width: 767px) {
+		font-size: calc(#{$minSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maketWidth}));
+	}
+
+	@media (min-width: 767px) {
+		font-size: calc(#{$minSize + px} + #{$addSize} * (100vw / #{$maketWidth}));
+	}
+}
+
+.test {
+	@include adaptive-font(40, 24); // maxFontSize, minFontSize
+}
+ */
+/*
+	
+	calc(minSize + (diffSize + diffSize * 0.7) * (( 100vw - minResolution) / maketSize));
+
+	calc(minSize + diffMinSizeMaxSize * (100vw / maketSize));
+
+---------
+
+	/* calc(24px + (40 - 24) * (100vw - 320px) / (maketSize - 320)); */
+
+*/

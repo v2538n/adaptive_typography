@@ -1,0 +1,64 @@
+calc(minSize + diffMinSizeMaxSize * (100vw / maketSize));
+
+ Resolution: 320  | rate: 0.25    | resultSize: 28
+ Resolution: 480  | rate: 0.375   | resultSize: 30
+ Resolution: 576  | rate: 0.45    | resultSize: 31.2
+ Resolution: 768  | rate: 0.6     | resultSize: 33.6
+ Resolution: 992  | rate: 0.775   | resultSize: 36.4
+ Resolution: 1024 | rate: 0.8     | resultSize: 36.8
+ Resolution: 1200 | rate: 0.9375  | resultSize: 39
+ Resolution: 1280 | rate: 1       | resultSize: 40
+ Resolution: 1400 | rate: 1.09375 | resultSize: 41.5
+ Resolution: 1600 | rate: 1.25    | resultSize: 44
+ Resolution: 1920 | rate: 1.5     | resultSize: 48
+ Resolution: 2048 | rate: 1.6     | resultSize: 49.6
+ Resolution: 2560 | rate: 2       | resultSize: 56
+ Resolution: 3840 | rate: 3       | resultSize: 72
+
+
+28 - 30 -31 - 33 - 36 - 37 - 39 - 40 - 41 - 44 - 48 - 50 - 56 - 72
+
+-------------------------
+
+calc(minSize + (diffSize + diffSize * 0.7) * (( 100vw - minResolution) / maketSize));
+
+
+ Resolution: 320  | rate: 0       | resultSize: 24
+ Resolution: 480  | rate: 0.125   | resultSize: 27.4
+ Resolution: 576  | rate: 0.2     | resultSize: 29.44
+ Resolution: 768  | rate: 0.35    | resultSize: 33.519
+ Resolution: 992  | rate: 0.525   | resultSize: 38.28
+ Resolution: 1024 | rate: 0.55    | resultSize: 38.96
+ Resolution: 1200 | rate: 0.6875  | resultSize: 42.7
+ Resolution: 1280 | rate: 0.75    | resultSize: 44.4
+ Resolution: 1400 | rate: 0.84375 | resultSize: 46.95
+ Resolution: 1600 | rate: 1       | resultSize: 51.2
+ Resolution: 1920 | rate: 1.25    | resultSize: 58
+ Resolution: 2048 | rate: 1.35    | resultSize: 60.72
+ Resolution: 2560 | rate: 1.75    | resultSize: 71.6
+ Resolution: 3840 | rate: 2.75    | resultSize: 98.8
+
+
+24 - 27 - 29 - 33 - 38 - 39 - 42 - 44 - 47 - 51 - 58 - 61 - 71 - 99
+
+-------------------------
+
+calc(minSize+ (maxSize - minSize) * (100vw - minResolution) / (1920 - minResolution));
+
+ Resolution: 320  | rate: 0     | resultSize: 24
+ Resolution: 480  | rate: 0.1   | resultSize: 25.6
+ Resolution: 576  | rate: 0.16  | resultSize: 26.56
+ Resolution: 768  | rate: 0.28  | resultSize: 28.48
+ Resolution: 992  | rate: 0.42  | resultSize: 30.72
+ Resolution: 1024 | rate: 0.44  | resultSize: 31.04
+ Resolution: 1200 | rate: 0.55  | resultSize: 32.8
+ Resolution: 1280 | rate: 0.6   | resultSize: 33.6
+ Resolution: 1400 | rate: 0.675 | resultSize: 34.8
+ Resolution: 1600 | rate: 0.8   | resultSize: 36.8
+ Resolution: 1920 | rate: 1     | resultSize: 40
+ Resolution: 2048 | rate: 1.08  | resultSize: 41.28
+ Resolution: 2560 | rate: 1.4   | resultSize: 46.4
+ Resolution: 3840 | rate: 2.2   | resultSize: 59.2
+
+
+24 - 25 - 26 - 28 - 30 - 31 - 33 - 34 - 35 - 37 - 40 - 41 - 46 - 59 
